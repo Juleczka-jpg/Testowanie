@@ -1,0 +1,25 @@
+Klasy równoważności:
+1) Poprawne oceny:
+- Klasa 1: Oceny od 1 do 6 (włącznie).
+2) Niepoprawne oceny:
+- Klasa 2: Oceny mniejsze niż 1 (np. 0, -1, -5).
+- Klasa 3: Oceny większe niż 6 (np. 7, 8, 10).
+
+Wartości brzegowe:
+Dla skali od 1 do 6 są to:
+- Dolna granica poprawnych ocen: 1
+- Górna granica poprawnych ocen: 6
+- Dolna granica niepoprawnych ocen: 0
+- Górna granica niepoprawnych ocen: 7
+
+Dlaczego wartości 0 i 7 są szczególnie ważne?
+
+Wartość 0:
+Jest bezpośrednio poniżej dolnej granicy dopuszczalnego zakresu.
+Stanowi pierwszą wartość niepoprawną w kierunku ujemnym.
+Pozwala zweryfikować, czy system poprawnie identyfikuje ocenę jako niepoprawną i zgłasza odpowiedni błąd.
+
+Wartość 7:
+Jest bezpośrednio powyżej górnej granicy dopuszczalnego zakresu.
+Stanowi pierwszą wartość niepoprawną w kierunku dodatnim.
+Pozwala zweryfikować, czy system poprawnie identyfikuje ocenę jako niepoprawną i zgłasza odpowiedni błąd.

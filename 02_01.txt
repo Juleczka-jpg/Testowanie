@@ -1,0 +1,5 @@
+Asercja Assert.Equal sprawdza, czy dwie wartości są równe. To najczęściej używana asercja, ponieważ większość testów sprawdza właśnie zgodność wyniku z oczekiwaniem. 
+Kolejność argumentów ma znaczenie dla czytelności komunikatu o błędzie: pierwszy argument to wartość oczekiwana, drugi to wartość faktyczna. Gdy test się nie powiedzie, framework wypisze obie wartości, co ułatwia odnalezienie problemu. 
+
+Asercje Assert.True sprawdzają, czy przekazana wartość logiczna jest odpowiednio prawdziwa. Używamy ich, gdy testowana metoda zwraca wartość typu bool albo gdy chcemy sprawdzić jakiś warunek. 
+Asercja Assert.True oczekuje wartości true i kończy się błędem, gdy otrzyma false.
