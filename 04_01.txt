@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Dane poprawne (typowa wartość dochodu):
 Ten przypadek sprawdza, czy metoda poprawnie oblicza podatek dla typowej wartości dochodu. Jest to podstawowy scenariusz, który powinien działać bezproblemowo, ponieważ metoda ma obliczać podatek dla dowolnej kwoty nieujemnej.
 Dane wejściowe: Kwota dochodu = 50 000.
@@ -11,4 +12,19 @@ Oczekiwany wynik: 0 (0 * 0,17 = 0).
 Dane niepoprawne (wartość ujemna):
 Ten przypadek sprawdza, czy metoda poprawnie obsługuje ujemną kwotę dochodu. Ponieważ metoda powinna przyjmować tylko kwoty nieujemne, wartość ujemna powinna zostać odrzucona, a metoda powinna zgłosić wyjątek lub zwrócić błąd. Jest to istotne, aby zapewnić, że metoda nie oblicza podatku dla nieprawidłowych danych, co mogłoby prowadzić do błędnych wyników.
 Dane wejściowe: Kwota dochodu = -10 000.
+=======
+Dane poprawne (typowa wartość dochodu):
+Ten przypadek sprawdza, czy metoda poprawnie oblicza podatek dla typowej wartości dochodu. Jest to podstawowy scenariusz, który powinien działać bezproblemowo, ponieważ metoda ma obliczać podatek dla dowolnej kwoty nieujemnej.
+Dane wejściowe: Kwota dochodu = 50 000.
+Oczekiwany wynik: 8 500 (50 000 * 0,17 = 8 500).
+
+Dane brzegowe (wartość minimalna, 0):
+Ten przypadek sprawdza, jak metoda zachowuje się dla najmniejszej dopuszczalnej wartości dochodu. Jest to istotne, ponieważ wartość 0 znajduje się na granicy zakresu danych poprawnych i niepoprawnych. Jeśli metoda niepoprawnie zinterpretuje 0 jako wartość niepoprawną, test to wykryje.
+Dane wejściowe: Kwota dochodu = 0.
+Oczekiwany wynik: 0 (0 * 0,17 = 0).
+
+Dane niepoprawne (wartość ujemna):
+Ten przypadek sprawdza, czy metoda poprawnie obsługuje ujemną kwotę dochodu. Ponieważ metoda powinna przyjmować tylko kwoty nieujemne, wartość ujemna powinna zostać odrzucona, a metoda powinna zgłosić wyjątek lub zwrócić błąd. Jest to istotne, aby zapewnić, że metoda nie oblicza podatku dla nieprawidłowych danych, co mogłoby prowadzić do błędnych wyników.
+Dane wejściowe: Kwota dochodu = -10 000.
+>>>>>>> a829ea1b88b546892ff8ae3facbe0011db00a406
 Oczekiwany wynik: Wyjątek.
