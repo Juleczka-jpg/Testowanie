@@ -920,11 +920,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\5M\\source\\repos\\03_02\\03_02\\03_02.csproj",
+      "projectUniqueName": "C:\\Users\\5M\\Documents\\Testowanie\\03_02\\03_02\\03_02.csproj",
       "projectName": "03_02",
-      "projectPath": "C:\\Users\\5M\\source\\repos\\03_02\\03_02\\03_02.csproj",
+      "projectPath": "C:\\Users\\5M\\Documents\\Testowanie\\03_02\\03_02\\03_02.csproj",
       "packagesPath": "C:\\Users\\5M\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\5M\\source\\repos\\03_02\\03_02\\obj\\",
+      "outputPath": "C:\\Users\\5M\\Documents\\Testowanie\\03_02\\03_02\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

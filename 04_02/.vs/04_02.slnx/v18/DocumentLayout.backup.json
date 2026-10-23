@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\5M\\source\\repos\\04_02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9701449A-D8B6-402F-B405-0E7E8E53A743}|04_02\\04_02.csproj|c:\\users\\5m\\source\\repos\\04_02\\04_02\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9701449A-D8B6-402F-B405-0E7E8E53A743}|04_02\\04_02.csproj|solutionrelative:04_02\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\5M\\source\\repos\\04_02\\04_02\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "04_02\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\5M\\source\\repos\\04_02\\04_02\\UnitTest1.cs",
+              "RelativeToolTip": "04_02\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T07:10:09.375Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
