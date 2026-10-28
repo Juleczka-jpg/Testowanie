@@ -39,4 +39,8 @@ Oczekiwany wynik: 0 (0 * 0,17 = 0).
 Dane niepoprawne (wartość ujemna):
 Ten przypadek sprawdza, czy metoda poprawnie obsługuje ujemną kwotę dochodu. Ponieważ metoda powinna przyjmować tylko kwoty nieujemne, wartość ujemna powinna zostać odrzucona, a metoda powinna zgłosić wyjątek lub zwrócić błąd. Jest to istotne, aby zapewnić, że metoda nie oblicza podatku dla nieprawidłowych danych, co mogłoby prowadzić do błędnych wyników.
 Dane wejściowe: Kwota dochodu = -10 000.
+<<<<<<< HEAD
 Oczekiwany wynik: Wyjątek.
+=======
+Oczekiwany wynik: Wyjątek.
+>>>>>>> a8df2719fa5a2e96e677ac5052b150927fd52ff2
