@@ -1,0 +1,10 @@
+Step Over (klawisz F10) — wykonuje bieżącą linię i przechodzi do następnej. Jeżeli linia zawiera wywołanie metody, wykonuje ją w całości, nie wchodząc do środka. 
+
+Step Into (klawisz F11) — działa jak Step Over, ale gdy linia zawiera wywołanie metody, wchodzi do jej wnętrza i zatrzymuje się na pierwszej linii tej metody. 
+
+Różnica między Step Over a Step Into jest kluczowa i często myląca dla początkujących. Step Over traktuje wywołanie metody jak pojedynczy krok — metoda się wykona, ale my jej nie oglądamy od środka. Step Into wchodzi do metody, abyśmy mogli prześledzić jej działanie linia po linii. 
+
+W praktyce stosujemy Step Over dla metod, którym ufamy (na przykład bibliotecznych), a Step Into dla własnych metod, które podejrzewamy o błąd. Dzięki temu nie tracimy czasu na oglądanie wnętrza sprawdzonego kodu, a skupiamy się na fragmentach wymagających uwagi. 
+
+Stos wywołań to lista metod, które zostały wywołane, aby program dotarł do bieżącego miejsca. Pokazuje on drogę, jaką przebył program — od metody Main aż do miejsca zatrzymania. 
+Stos wywołań jest szczególnie pomocny przy diagnozowaniu wyjątków. Gdy program zgłosi wyjątek, stos wywołań pokazuje dokładnie, w której metodzie to się stało oraz przez jakie metody program tam dotarł. To często wystarcza, aby zlokalizować źródło problemu w kilka sekund. 

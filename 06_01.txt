@@ -1,0 +1,24 @@
+Test funkcjonalny sprawdza, czy aplikacja działa zgodnie z wymaganiami lub specyfikacją. Testy są zaplanowane, mają jasne kroki i oczekiwane wyniki.
+
+Przykład dla aplikacji z listą kontaktów:
+TU01: Użytkownik wprowadza imię “Jan” i numer “123456789”. 
+Oczekiwany wynik: Kontakt “Jan” pojawia się na liście.
+TU02: Nieprawidłowe wejście: wpisz "abc" jako numer telefonu. 
+Oczekiwany wynik: program prosi o ponowne wpisanie. 
+TU03: Wprowadź imię i numer telefonu zawierający spacje i myślniki (np. "Jan Kowalski", "123-456-789").
+Oczekiwany wynik: Kontakt zostaje dodany poprawnie, a format numeru jest zachowany.
+TU04: Wprowadź bardzo długi numer telefonu (np. 50 cyfr).
+Oczekiwany wynik: Aplikacja wyświetla błąd lub ogranicza długość numeru.
+TU05: Usuń istniejący kontakt.
+Oczekiwany wynik: Kontakt znika z listy.
+
+Test eksploracyjny nie mają gotowego scenariusza — tester „zwiedza" aplikację, celowo szukając nieoczekiwanych zachowań. Klikamy w miejsca, w których normalny użytkownik by nie kliknął, wpisujemy bardzo długie napisy, znaki specjalne, puste wartości. To jeden z najskuteczniejszych sposobów znajdowania ukrytych błędów. 
+
+Przykład dla aplikacji z listą kontaktów:
+TE01: Wpisz znaki specjalne: <>;&'"\/ 
+TE02: Kliknij dwukrotnie szybko przycisk "Zapisz". 
+TE03: Zostaw wszystkie pola puste i kliknij każdy przycisk. 
+TE04: Wpisz w numer telefonu ciąg znaków.
+TE05: Wpisz bardzo długi tekst w polu imienia (np. 1000 znaków). 
+
+

@@ -1,0 +1,40 @@
+static double ObliczSrednia(int[] oceny)
+{
+    int suma = 0;
+
+    // Pętla z błędem w zakresie indeksów. 
+    for (int i = 0; i <= oceny.Length; i++)    <---- tu jest błąd
+    {
+        suma = suma + oceny[i];
+    }
+
+    return suma / oceny.Length;
+}
+
+Debuguje z użyciem okna Watch:
+- ustawiam breakpoint na początku metody ObliczSrednia
+- dodaje suma / oceny.Length do okna Watch
+- obserwuje wartość zmiennej i
+
+Głowny błąd polega na tym, że pętla działa od i = 0 do i <= oceny.Length, to znaczy, że próbuje odczytać element poza tablicą - indeksy tablicy w C# zaczynają się od 0. Powoduje to wyjątek IndexOutOfRangeException.
+Kolejny błąd pojawia się, gdy tablica ocen jest pusta, wyrażenie suma / oceny.Length spowoduje wyjątek DivideByZeroException.
+Błąd jest również przy zmiennej suma, bo jest ona typu int, co może prowadzić do utraty precyzji wartości 2.5 -> 2.
+
+Poprawna wersja:
+
+static double ObliczSrednia(int[] oceny)
+{
+    if (oceny == null || oceny.Length == 0)   <---- obsługa pustej tablicy
+    {
+        return 0; 
+    }
+
+    int suma = 0;
+
+    for (int i = 0; i < oceny.Length; i++)    <---- poprawiony błąd
+    {
+         suma = suma + oceny[i];
+    }
+
+    return (double)suma / oceny.Length;       <---- rzutowanie na double
+}

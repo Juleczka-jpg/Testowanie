@@ -1,0 +1,38 @@
+static int PoliczParzyste(int[] liczby)
+{
+    int licznik = 0;
+
+    foreach (int liczba in liczby)
+    {
+        if (liczba % 2 == 1)        <----- tu jest błąd
+        {
+            licznik = licznik + 1;
+        }
+    }
+
+    return licznik;
+}
+
+Błąd był ukryty w warunku, liczba podzielna przez 2 nie może dawać reszty 1, bo jest w tedy nieparzysta a program zakłada, że ma sprawdzać ile jest parzystych liczb w tablicy.
+
+Za pomocą debuggera ustawiłam punkty przerwania na:
+- foreach (int liczba in liczby) - obserwuję liczbę pobraną z tablicy
+- if (liczba % 2 == 0) - obserwuję zwróconą z warunku wartość true albo false
+- return licznik; - obserwuję zwróconą liczbę parzystych liczb
+
+======== Poprawna wersja: ===========
+
+static int PoliczParzyste(int[] liczby)
+{
+    int licznik = 0;
+
+    foreach (int liczba in liczby)
+    {
+        if (liczba % 2 == 0)        <----- poprawka (1 => 0)
+        {
+            licznik = licznik + 1;
+        }
+    }
+
+    return licznik;
+}
