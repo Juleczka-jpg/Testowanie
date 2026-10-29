@@ -1,0 +1,34 @@
+lista studentów 
+(imię, 
+nazwisko, 
+ocena w skali 2–5)
+
+Użytkownik może dodawać studentów, 
+wyświetlać listę,
+obliczać średnią ocen. 
+
+[FUNKCJONALNE] 
+TF01 – Dodawanie: wpisz Jan, Kowalski, 3.
+Oczekiwany wynik: Student zostaje dodany do listy. 
+Komentarz: Sprawdza, czy aplikacja poprawnie dodaje nowego studenta do listy.
+TF02 – Wyświetlanie listy: Dodaj co najmniej 1 studenta a następnie wywołaj funkcję.
+Oczekiwany wynik: Program wyświetla listę studentów. 
+Komentarz: Upewnia się, że wprowadzone dane są prawidłowo przechowywane i wyświetlane.
+TF03 – Obliczanie średniej ocen: Dodaj co najmniej trzech studentów z różnymi ocenami a następnie wywołaj funkcję.
+Oczekiwany wynik: Program wyświetla średnią ocen. 
+Komentarz: Weryfikuje, czy aplikacja poprawnie oblicza średnią ocen na podstawie wprowadzonych danych.
+TF04 – Nieprawidłowe wejście: Wpisz Adam, Adamczuk, 1.
+Oczekiwany wynik: Program prosi o ponowne wpisanie. 
+Komentarz: Sprawdza, czy aplikacja odrzuca nieprawidłowe dane i prosi o ich poprawienie.
+
+[GRANICE] 
+TG01 – Wpisz 1 → oczekiwany wynik: odrzucenie, komunikat o minimalnym wieku. 
+Komentarz: Testuje, czy aplikacja odrzuca wartości poniżej dolnej granicy zakresu ocen. 
+TG02 – Wpisz 2 → oczekiwany wynik: akceptacja. 
+Komentarz: Sprawdza, czy aplikacja akceptuje dolną granicę dozwolonego zakresu ocen.
+TG03 – Wpisz 5 → oczekiwany wynik: akceptacja. 
+Komentarz: Sprawdza, czy aplikacja akceptuje górną granicę dozwolonego zakresu ocen.
+TG04 – Wpisz 6 → oczekiwany wynik: odrzucenie, komunikat o maksymalnym wieku. 
+Komentarz: Testuje, czy aplikacja odrzuca wartości ponad górną granicę zakresu ocen.
+TG05 – Wpisz –1 → oczekiwany wynik: odrzucenie. 
+Komentarz: Sprawdza, jak aplikacja reaguje na ujemne wartości ocen. Powinna je odrzucić.
